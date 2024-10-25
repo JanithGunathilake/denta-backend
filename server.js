@@ -26,7 +26,7 @@ app.post('/process-image', upload.single('image'), async (req, res) => {
         const goodTeethImage = result.data[0]; 
         const badTeethImage = result.data[1]; 
 
-        // Create image URLs from Base64
+       
         const goodTeethImageUrl = `data:image/jpeg;base64,${goodTeethImage}`;
         const badTeethImageUrl = `data:image/jpeg;base64,${badTeethImage}`;
 
